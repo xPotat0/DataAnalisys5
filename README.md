@@ -144,6 +144,11 @@ cd C:\Users\111\MLA_Lab5\MLA_Lab4
 ```
  - Запустим обучение ML-Агента
 ```
-mlagents-learn Economic.yaml --run-id=Ecomonic -force
+mlagents-learn Economic.yaml --run-id=Ecomonic --force
 ```
+
+![1](https://user-images.githubusercontent.com/106258306/204144752-4734f6e8-d7f0-418c-ae1b-9c3cf53d1ba8.png)
+
  - Запустим сцену в Unity. Если всё было сделано правильно, то в командой строке появится сообщение о считывании .yaml файла.
+
+![1](https://user-images.githubusercontent.com/106258306/204144823-df1dca77-1627-45b9-a869-3a871468cb9c.png)
