@@ -78,7 +78,36 @@ Actions), которые может выполнять агент. Дискре�
 Напишем .yaml файл для конфигурации обучающего тренажера.
 
 ```yaml
-f
+behaviors:
+  Economic:
+    trainer_type: ppo
+    hyperparameters:
+      batch_size: 1024
+      buffer_size: 10240
+      learning_rate: 3.0e-4
+      learning_rate_schedule: linear
+      beta: 1.0e-2
+      epsilon: 0.2
+      lambd: 0.95
+      num_epoch: 3      
+    network_settings:
+      normalize: false
+      hidden_units: 128
+      num_layers: 2
+    reward_signals:
+      extrinsic:
+        gamma: 0.99
+        strength: 1.0
+    checkpoint_interval: 500000
+    max_steps: 750000
+    time_horizon: 64
+    summary_freq: 5000
+    self_play:
+      save_steps: 20000
+      team_change: 100000
+      swap_steps: 10000
+      play_against_latest_model_ratio: 0.5
+      window: 10
 ```
 
 Поместим файл Economic.yaml в папку с проектом Unity. Файл является конфигуратором обучающего тренажера. В нем описываются, какой тренажер использовать: PPO или SAC (парметр trainer_type). Количество опыта, которое необходимо собрать, прежде чем создавать и отображать тренировочную статистику (параметр summary_freq, он определяет детализацию графиков в Tensorboard), и так далее.
