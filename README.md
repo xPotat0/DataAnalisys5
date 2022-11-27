@@ -137,3 +137,4 @@ C:\Users\111\MLA_Lab5\MLA_Lab4
 ```
 mlagents-learn Economic.yaml --run-id=Ecomonic -force
 ```
+ - Запустим сцену в Unity. Если всё было сделано правильно, то в командой строке появится сообщение о считывании .yaml файла.
