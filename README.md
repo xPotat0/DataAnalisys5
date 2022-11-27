@@ -120,3 +120,12 @@ behaviors:
 ```
 conda create -n MLAgent python=3.6.13
 ```
+ - Активируем созданное пространство
+```
+conda activate MLAgent
+```
+ - Установим пакеты MLAgent и Torch
+```
+pip install mlagents==0.28.0
+pip install torch~=1.7.1 -f https://download.pytorch.org/whl/torch_stable.html
+```
