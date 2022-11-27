@@ -129,3 +129,11 @@ conda activate MLAgent
 pip install mlagents==0.28.0
 pip install torch~=1.7.1 -f https://download.pytorch.org/whl/torch_stable.html
 ```
+ - Перейдём в папу с проектом (Где лежит Economic.yaml файл)
+```
+C:\Users\111\MLA_Lab5\MLA_Lab4
+```
+ - Запустим обучение ML-Агента
+```
+mlagents-learn Economic.yaml --run-id=Ecomonic -force
+```
