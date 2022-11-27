@@ -160,3 +160,9 @@ mlagents-learn Economic.yaml --run-id=Ecomonic --force
 |-|-|
 |[INFO] Economic. Step: 5000. Time Elapsed: 89.651 s. No episode was completed since last summary. Training.|Пример неудачной итерации. За 5000 шагов, которые прошли за 89.651 сек. обучение не произведено|
 |[INFO] Economic. Step: 10000. Time Elapsed: 112.806 s. Mean Reward: 1.000. Std of Reward: 0.000. Training. ELO: 1200.006.|Пример удачной итерации. Агент частично обучился за 10000 шагов с вознаграждением 0.000.|
+
+Завершим процесс обучения. Для этого в командной строке нажмём сочетание Ctrl+C. После этого отключим сцену в Unity.
+
+Результаты обучения модели были сохранены в папку с .yaml файлом.
+
+![1](https://user-images.githubusercontent.com/106258306/204145615-45a3a051-0845-40a0-9d0b-38f55102fb18.png)
