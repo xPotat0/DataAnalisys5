@@ -204,3 +204,12 @@ speedMove = Mathf.Clamp(actionBuffers.ContinuousActions[0], 3f, 7f);
 
 Переобучим нашу модель и посмотрим на результаты.
 
+![1](https://user-images.githubusercontent.com/106258306/204316908-4ce1424d-2f8f-4e8c-a0d2-2616aa30ad82.png)
+
+Можно заметить, что получаемые награды на графике Cumulative Reward стали больше, но остальные графики остались прежнее.
+Вернём значения коэфициента на прежнее значение и поменяем коэфициенты во времени добычи.
+
+```
+speedMove = Mathf.Clamp(actionBuffers.ContinuousActions[0], 1f, 10f);
+timeMining = Mathf.Clamp(actionBuffers.ContinuousActions[1], 3f, 7f);
+```
