@@ -201,3 +201,6 @@ tensorboard --logdir=results
 ```c#
 speedMove = Mathf.Clamp(actionBuffers.ContinuousActions[0], 3f, 7f);
 ```
+
+Переобучим нашу модель и посмотрим на результаты.
+
