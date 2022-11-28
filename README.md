@@ -225,3 +225,13 @@ timeMining = Mathf.Clamp(actionBuffers.ContinuousActions[1], 3f, 7f);
 ```c#
 amountGold = Mathf.Clamp(actionBuffers.ContinuousActions[2], 5f, 15f);
 ```
+
+![1](https://user-images.githubusercontent.com/106258306/204321482-7927efe7-eabe-4ea8-893b-d2b4121107e9.png)
+
+График Cumulative Reward стал возрастать, а график Policy Loss стал приближаться к прямой линии.
+
+Оставим это изменение и изменим цену на кирку.
+
+```c#
+pickaxeСost = Mathf.Clamp(actionBuffers.ContinuousActions[3], 70f, 800f);
+```
