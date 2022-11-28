@@ -166,3 +166,22 @@ mlagents-learn Economic.yaml --run-id=Ecomonic --force
 Результаты обучения модели были сохранены в папку с .yaml файлом.
 
 ![1](https://user-images.githubusercontent.com/106258306/204145615-45a3a051-0845-40a0-9d0b-38f55102fb18.png)
+
+ ## Задание 2
+ - Построение графиков в TensorBoard
+ 
+ ## Ход работы
+Построим графики. Для этого установим TensorBoard, используя командную строку.
+
+```
+pip install tensorflow
+```
+
+После завершения установки запустим TensorBoard
+
+```
+tensorboard --logdir=results
+```
+
+По умолчанию TensorBoard запускается по ссылке:
+ -  http://localhost:6006:
