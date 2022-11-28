@@ -185,3 +185,9 @@ tensorboard --logdir=results
 
 По умолчанию TensorBoard запускается по ссылке:
  -  http://localhost:6006:
+ 
+ Перейдём по ссылке и посмотрим на результаты.
+ 
+ ![1](https://user-images.githubusercontent.com/106258306/204308664-01f3fcec-b533-4c1d-bbe2-f62cff337e4b.png)
+
+На сайте построилось 5 графиков.
