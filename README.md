@@ -213,3 +213,15 @@ speedMove = Mathf.Clamp(actionBuffers.ContinuousActions[0], 3f, 7f);
 speedMove = Mathf.Clamp(actionBuffers.ContinuousActions[0], 1f, 10f);
 timeMining = Mathf.Clamp(actionBuffers.ContinuousActions[1], 3f, 7f);
 ```
+
+Переобучим модель и посмотрим на результаты.
+
+![1](https://user-images.githubusercontent.com/106258306/204319447-656a9227-ebc6-47c2-8ed3-14e69b7c7dda.png)
+
+График Cumulative Reward застыл на отметке 1, а из график Policy Loss исчезли скачки.
+
+Вернём значение коэфициентов времени копания и изменим коэфициенты на цене золота.
+
+```c#
+amountGold = Mathf.Clamp(actionBuffers.ContinuousActions[2], 5f, 15f);
+```
